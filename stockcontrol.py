@@ -7,7 +7,7 @@
 ##
 
 ## NAME: KATEETE  TWAHA    NO.: 1800737883    REG.NO: 2018/HD05/1958U    
-## 
+## NAME: BEINOMUGISHA EDWIN NO:1800737351     REG NO: 2018/HD05/1948U
 
 from datetime import date
 
@@ -51,7 +51,7 @@ class StockItem(object):
 
     def toString(self):
         """Returns a string describing the stock item, its barcode and the quantity remaining"""
-        thedescription = "Name: " + self.name + "Barcode: " +  self.barcode + "Quantity: " + str(self.quantity)
+        thedescription = "\tName: " + self.name + "\tBarcode: " +  self.barcode + "\tQuantity: " + self.quantity
         return thedescription
         #TODO complete this method
         #pass 
@@ -63,8 +63,11 @@ class StockItem(object):
         #so we need to check if self.quantity is less than five.
          if self.quantity < 5:
             return True
-        #pass
-    
+         
+            #pass
+    def Restock(self, barcode, quantity):
+        if product not in StockItem(name):
+            raise NotFound(product +"product not in the items")
     def sell(self):
         """Process the sale of an item, generates an exception if an item is sold when its stock is zero"""
         #TODO
@@ -87,6 +90,10 @@ class StockControl(object):
         #changes we might have problems.
         self.stocklist = [] #a list of stock items   
         self.restockitem = [] #a list of items that need to be restocked.
+        
+    def Restock(self):
+        StockItem.__init__(self, quantity, barcode)
+
       
     def listRestock(self):
         """Return a string listing items that need restocking"""
