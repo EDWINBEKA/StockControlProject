@@ -7,7 +7,7 @@
 ##
 
 ## NAME: KATEETE  TWAHA    NO.: 1800737883    REG.NO: 2018/HD05/1958U    
-## 
+## NAME: BEINOMUGISHA EDWIN StdNo:1800737351  RegNO: 2018/HD05/1948U
 
 from datetime import date
 
